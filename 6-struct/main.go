@@ -9,7 +9,8 @@ type user struct {
 }
 
 type endereco struct {
-	rua string
+	rua   string
+	teste string
 }
 
 func main() {
@@ -23,7 +24,7 @@ func main() {
 
 	fmt.Println(user1)
 
-	endereco1 := endereco{"rua bla bla"}
+	endereco1 := endereco{teste: "asd"}
 
 	user2 := user{"abla bla", 223, endereco1}
 
