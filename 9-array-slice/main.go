@@ -36,4 +36,14 @@ func main() {
 	fmt.Printf("slice2 %+v \n", slice2)
 
 	//arrays internos
+	slice3 := make([]float32, 10, 11)
+
+	fmt.Println("tamanho slice3", len(slice3))
+	fmt.Println("capacidade slice3", cap(slice3))
+
+	slice3 = append(slice3, 4)
+	slice3 = append(slice3, 4) //adiciona 1 elemento que passa o tamanho do slice e ele dobra a capacidade de elementos"
+
+	fmt.Println("tamanho slice3", len(slice3))
+	fmt.Println("capacidade slice3", cap(slice3))
 }
