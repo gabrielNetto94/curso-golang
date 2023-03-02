@@ -7,6 +7,8 @@ import (
 func recuperaExec() {
 	if r := recover(); r != nil {
 		fmt.Println("recuperamos")
+
+		fmt.Println(fmt.Sprintf("Exception: %v\n", r))
 	}
 }
 
